@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: #38C7C7;
+    font-weight: 300;
+}
+
+ul {
+    list-style: none;
+    
+}
+
+ul li {
+    text-decoration: none;
+}
+
+ul li:hover {
+    cursor: pointer;
+    text-decoration: line-through;
+}
+
+.container {
+    /* background: aqua; */
+    min-width: 320px;
+    max-width: 400px;
+    height: 100%;
+    display: flex; 
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.input_form {
+    margin-top: 2em;
+}
+
+.input_form input {
+    background: #F1F1F1;
+    border: none;
+    color: #828282;
+    padding: 10px;
+    width: 250px;
+    font-size: 1.2em;
+    box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+    float: left;
+    z-index: 1;
+    outline: none;
+}
+
+.input_form input::placeholder {
+    opacity: 0.5;
+}
+
+.input_form button {
+    background: #38C7C7;
+    width: 50px;
+    height: 44px;
+    vertical-align: bottom;
+    border: none;
+    display: block;
+    box-shadow: 2px 0 6px 0 hsla(0, 0%, 0%, 0.2);
+    z-index: 2;
+    outline: none;
+}
+
+.input_form button:hover {
+    cursor: pointer;
+}
+
+.input_form button svg {
+    height: 45px;
+    display: block;
+    margin: 0 auto;
+}
+
+.todo-list {
+    margin: 2em 0 2em 0;
+    /* display: none; */
+}
+
+.todo-list h1 {
+    text-align: center;
+    margin-bottom: .6em;
+}
+
+.list li {
+    display: flex;
+    background: #f1f1f1;
+    color: #828282;
+    font-size: 1.1em;
+    border-left: 4px solid #38C7C7;
+    width: 300px;
+    box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+    align-items: center;
+    padding: 14px;
+    margin: 10px 0;
+}
+
+#clear-items {
+    width: 335px;
+    margin: 1em 0 2em 0;
+    font-weight: 400;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 12px;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    background: #38C7C7;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-image: linear-gradient(-225deg, #47A5FF 0%, #3BC5A0 100%);
+    width: 100%;
+    height: 3em;
+}
+
+footer p {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 0;
+    color: #fff;
+}
+
+footer svg {
+    vertical-align: text-bottom;
+    fill: #fff;
+    height: 25px;
+    width: auto;
+}
+
+
+
